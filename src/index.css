@@ -1,0 +1,9 @@
+/* src/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom fonts (if loaded externally via Google Fonts) */
+body {
+  @apply bg-darkBg text-white font-sans;
+}
