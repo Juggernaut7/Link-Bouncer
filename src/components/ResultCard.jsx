@@ -38,12 +38,19 @@ const ResultCard = ({ url, status }) => {
   const favicon = `https://www.google.com/s2/favicons?sz=64&domain_url=${url}`
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`mt-6 bg-darkCard p-6 rounded-xl shadow-md border border-gray-800 backdrop-blur-md`}
-    >
+  <motion.div
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  whileHover={{ scale: 1.015 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  className={`mt-6 bg-darkCard p-6 rounded-xl shadow-md border border-gray-800 backdrop-blur-md`}
+>
+
+      <div className="flex items-center gap-2 mb-4">
+        <img src={favicon} alt="favicon" className="w-8 h-8 rounded-md" />
+        <div className="text-lg font-medium text-white">{hostname}</div>
+      </div>
+
       <div className="flex items-center gap-4 mb-4">
         <img src={favicon} alt="favicon" className="w-8 h-8 rounded-md" />
         <div className="text-lg font-medium text-white">{hostname}</div>
