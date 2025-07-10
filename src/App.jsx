@@ -15,6 +15,10 @@ function App() {
       <h1 className="text-3xl font-bold mb-6 text-center text-neonGreen tracking-wide drop-shadow-neon animate-pulseSlow">
   🔗 LinkBouncer
 </h1>
+<p className="text-center text-gray-400 mb-8 max-w-md mx-auto text-sm md:text-base">
+  Instantly check if a link is <span className="text-safe font-medium">safe</span>, <span className="text-yellow-400 font-medium">suspicious</span>, or <span className="text-alert font-medium">malicious</span>. Stay secure before you click.
+</p>
+
         <p className="text-lg text-center text-neonGreen tracking-wide drop-shadow-neon animate-pulseSlow">
   Check the status of a link in real-time.
 </p>
